@@ -1,0 +1,7 @@
+FROM eclipse-temurin:17.0.18.8-jdk
+
+LABEL "org.opencontainer.author"="Docker-practice"
+
+COPY target/Docker-practice-0.0.1-SNAPSHOT.jar  Docker-practice-0.0.1-SNAPSHOT.jar 
+
+ENTRYPOINT [ "java","-jar","Docker-practice-0.0.1-SNAPSHOT.jar "]
